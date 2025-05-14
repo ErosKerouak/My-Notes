@@ -1,0 +1,37 @@
+# Ignora configurações locais do Obsidian
+.obsidian/
+Excalidraw/
+
+# Ignora arquivos temporários e de backup
+*.tmp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+~$*
+
+# Ignora arquivos exportados ou auxiliares
+PDFs/
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.png
+
+# Ignora conteúdo de plugins (caso você use community plugins)
+.obsidian/plugins/**/node_modules/
+.obsidian/plugins/**/dist/
+
+# Ignora bases BibTeX se forem sincronizadas por outro meio
+referencias.bib
+
+# Ignora pastas ocultas e de sincronização
+.sync/
+.cache/
+.tmp/
+
+# Ignora arquivos do sistema operacional
+ehthumbs.db
+desktop.ini
+
