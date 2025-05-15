@@ -1,6 +1,11 @@
 
+---
+
 **Linguagem:** #Bash  
 **Tags:** #cheatsheet #comandos
+
+---
+
 ### Manipulação de Arquivos e Diretórios
 
 - `pwd` → Mostra o diretório atual (caminho absoluto).
@@ -15,6 +20,7 @@
 - `rm -r pasta/` → Remove uma pasta e todo o seu conteúdo.
 - `cp arquivo.txt destino/` → Copia um arquivo.
 - `mv arquivo.txt destino/` → Move ou renomeia um arquivo.
+---
 
 ### Visualização de Arquivos
 
@@ -23,6 +29,8 @@
 - `head -n 10 arquivo.txt` → Mostra as 10 primeiras linhas.
 - `tail -n 10 arquivo.txt` → Mostra as 10 últimas linhas.
 - `tail -f arquivo.log` → Acompanha um arquivo em tempo real.
+-
+---
 
 ### Redirecionamento e Pipes
 
@@ -30,6 +38,9 @@
 - `comando >> arquivo.txt` → Adiciona a saída ao final do arquivo.
 - `comando < arquivo.txt` → Usa o arquivo como entrada para um comando.
 - `comando1 | comando2` → Usa a saída de um comando como entrada para outro.
+
+---
+
 ### Descompactação de Arquivos
 
 - `unzip arquivo.zip` → Descompacta arquivos `.zip`.

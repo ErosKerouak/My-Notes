@@ -1,47 +1,25 @@
+# 00-Inbox
 
----
-#  Pasta 00-Inbox
-
-Esta é a **caixa de entrada** do Vault. Aqui ficam **anotações rápidas, ideias soltas, lembretes, capturas de pensamentos ou qualquer coisa que ainda não foi organizada**.
-
-
+Esta pasta funciona como ponto de entrada para novas anotações. Serve como espaço temporário para registrar informações rapidamente antes de classificá-las em outras áreas do Vault.
 
 ---
 
-##  Quando usar esta pasta
+## Finalidade
 
-Use esta pasta para:
-
-- Registrar uma ideia que surgiu no meio do dia
-- Anotar algo durante uma reunião ou aula, antes de organizar
-- Fazer rascunhos de notas antes de criar uma estrutura definitiva
-- Copiar e colar um trecho de texto, referência, ou fórmula para revisar depois
+- Capturar anotações, ideias, referências ou trechos sem estrutura definida.
+- Armazenar conteúdos colados de outras fontes para posterior edição.
+- Registrar notas criadas de forma rápida via captura automática, comandos ou plugins.
 
 ---
 
-##  Como processar
+## Boas práticas
 
-Sempre que possível:
-
-1. **Revisar as notas do Inbox no início ou fim do dia**
-2. Para cada nota:
-   - Pergunte: “Essa nota pertence a qual parte do Vault?”
-   - Renomeie o arquivo, se necessário
-   - Mova para a pasta correta:
-     - `01-Projetos` → se for algo do mestrado
-     - `03-Leituras` → se for de um artigo
-     - `04-Pesquisa` → se for um teste, insight ou anotação técnica
-     - etc.
-
-3. Apague rascunhos que não forem mais úteis
+- Processar e mover os arquivos periodicamente para as pastas apropriadas.
+- Adicionar tags ou títulos provisórios que facilitem a triagem posterior.
+- Evitar manter arquivos indefinidamente nesta pasta sem categorização.
 
 ---
 
-## Dicas de uso
+## Observações
 
-- Use um template simples para novas anotações: `template-inbox.md`
-- Prefixe os arquivos com a data: `2024-05-14 - ideia sobre interpolação`
-- Não se preocupe em formatar perfeitamente aqui — foco é capturar
-
-
----
+A pasta `00-Inbox` não deve conter conteúdo permanente. Seu uso está restrito à coleta inicial de informação para posterior organização e contextualização no Vault.

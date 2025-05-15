@@ -1,57 +1,32 @@
 
 ---
 
-#  Vault de Anotações Pessoais — Eros K. Cordeiro Pereira
+# Vault de Anotações
 
-Este Vault é meu sistema pessoal de anotações e organização do conhecimento. Ele foi inicialmente criado para o mestrado, mas é projetado para ser mantido e expandido mesmo após a conclusão da pós-graduação, integrando informações acadêmicas, profissionais e pessoais.
-
-A estrutura combina clareza, modularidade e flexibilidade. Cada nota deve ser útil no presente e legível no futuro.
+Este repositório organiza minhas anotações pessoais, acadêmicas e profissionais. A estrutura a seguir reflete diferentes tipos de conteúdo e finalidades de uso.
 
 ---
 
-## 🗂️ Estrutura Geral do Vault
+## Estrutura de Pastas
 
-```
-
-📁 00-Inbox → Anotações temporárias que ainda serão organizadas  
-📁 01-Projetos → Projetos acadêmicos e profissionais (ex: dissertação, artigos, vídeos, aulas)  
-📁 02-Disciplinas → Conteúdos organizados por disciplina ou curso formal  
-📁 03-Leituras → Fichamentos, comentários e resumos de artigos, livros, capítulos, etc  
-📁 04-Pesquisa → Logs, ideias, testes, hipóteses e observações técnicas  
-📁 05-Códigos → Trechos de código comentado, scripts úteis, algoritmos, funções próprias  
-📁 06-Referências → Anotações bibliográficas, conexões com BibTeX e resumos de fontes  
-📁 07-Templates → Modelos de notas reutilizáveis para leitura, aula, projeto, etc  
-📁 08-Pessoal → Vida pessoal, finanças, reflexões, metas, saúde, organização de rotina  
-📁 09-Ideias → Brainstorming, notas soltas, planos, rascunhos criativos  
-📁 10-Ensino → Material de apoio, anotações pedagógicas, estágio de docência, listas resolvidas  
-📁 99-Arquivo → Notas antigas ou desatualizadas que não devem ser apagadas
-
-```
+| Pasta                  | Descrição |
+|------------------------|-----------|
+| `000-Templates/`       | Modelos reutilizáveis para novos arquivos (aulas, leituras, fichamentos, códigos, etc.). |
+| `00-Inbox/`            | Anotações soltas ou temporárias, a serem processadas e organizadas posteriormente. |
+| `01-Cheatsheets/`      | Referências rápidas e condensadas sobre linguagens, ferramentas, fórmulas e conceitos técnicos. |
+| `02-Tutorials/`        | Instruções passo a passo para procedimentos recorrentes, como configuração de software ou uso de ferramentas específicas. |
+| `03-Teaching/`         | Materiais relacionados à prática docente, como roteiros de aula, listas resolvidas e observações sobre ensino. |
+| `04-Readings/`         | Leituras organizadas, fichamentos, resumos e comentários sobre textos técnicos, artigos ou livros. |
+| `05-Ideias/`           | Rascunhos de projetos, hipóteses, sugestões de ferramentas, esboços e anotações em fase inicial. |
+| `99-Arquivo/`          | Conteúdo inativo, rascunhos descartados ou notas antigas que não estão mais em uso ativo, mas que podem ser úteis futuramente. |
 
 ---
 
-##  Princípios de uso
+## Uso
 
--  Toda nova nota começa em `00-Inbox` e depois é movida para sua pasta definitiva
--  Notas são interligadas com `[[nome-da-nota]]` para formar uma rede semântica
--  Fórmulas e códigos usam sintaxe LaTeX e Markdown para legibilidade técnica
--  Cada nota pode conter tags (ex: `#geofísica`, `#ensaio`, `#cotidiano`) para facilitar buscas cruzadas
--  O sistema deve crescer com o tempo, sem se tornar caótico: foco na consistência
+- O conteúdo é mantido de forma modular, com links cruzados entre as notas quando necessário.
+- Todas as anotações seguem uma estrutura padronizada baseada em templates da pasta `000-Templates`.
+- A organização pode evoluir com o tempo, conforme novas demandas surgirem.
 
 ---
 
-##  Fluxos principais
-
-- **Estudo:** `02-Disciplinas`, `03-Leituras`, `04-Pesquisa`, `10-Ensino`
-- **Produção:** `01-Projetos`, `05-Códigos`, `06-Referências`, `07-Templates`
-- **Pessoal e criativo:** `08-Pessoal`, `09-Ideias`
-- **Temporário e histórico:** `00-Inbox`, `99-Arquivo`
-
----
-
-##  Objetivo do Vault
-
-> Ser um espaço confiável para guardar, desenvolver e interligar ideias — de forma viva, orgânica e reutilizável.  
-> Um repositório de pensamento a longo prazo, onde estudar, criar e lembrar se encontram.
-
----
