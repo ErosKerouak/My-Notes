@@ -17,7 +17,7 @@ Esta pasta contém cheatsheets de programação, organizados por linguagem ou bi
 
 Cada arquivo segue a convenção:
 
-- Nome do arquivo: `cheatsheet-<linguagem ou biblioteca>.md`
+- Nome do arquivo: `<linguagem ou biblioteca>-cheatsheet.md`
 - Tags por linguagem (`#python`, `#bash`, `#git`)
 - Uso preferencial de listas com exemplos práticos
 
