@@ -32,5 +32,5 @@
 
 ###  Relacionado a
 
-- [[comandos-bash-essenciais]]
+- [[bash-essenciais]]
 - [[comandos-conda]]

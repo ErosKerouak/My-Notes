@@ -1,8 +1,9 @@
+
 **Linguagem:** #Bash  
+**Tags:** #cheatsheet #comandos
 ### Manipulação de Arquivos e Diretórios
 
 - `pwd` → Mostra o diretório atual (caminho absoluto).
-- touch referencias.bib
 - `ls` → Lista arquivos e pastas do diretório atual.
 - `ls -l` → Lista arquivos com detalhes (permissões, tamanho, data).
 - `ls -a` → Lista arquivos, incluindo ocultos (. e ..).
@@ -46,9 +47,3 @@
 - [[instalação-de-programas]]
 - [[comandos-git]]
 - [[comandos-conda]]
-
-
-
-
-
-

@@ -41,4 +41,4 @@
 ###  Relacionado a
 
 - [[comandos-conda]]
-- [[comandos-bash-essenciais]]
+- [[bash-essenciais]]
