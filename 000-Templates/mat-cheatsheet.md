@@ -1,6 +1,6 @@
 # <% tp.file.title %>
 
-**Data:** <% tp.date.now("YYYY-MM-DD") %>  
+**Data:** <% tp.date.now("DD-MM-YYYY") %>  
 **Tema:** {{Ex: Cálculo Vetorial, Álgebra Linear, Geofísica, Operadores Diferenciais}}  
 **Tags:** #cheatsheet #formulas #latex #referencia  
 

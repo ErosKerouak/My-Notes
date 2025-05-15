@@ -1,6 +1,6 @@
 # <% tp.file.title %>
 
-**Data:** <% tp.date.now("YYYY-MM-DD") %>  
+**Data:** <% tp.date.now("DD-MM-YYYY") %>  
 **Linguagem/Ferramenta:** {{Ex: Python, Bash, Git, Conda}}  
 **Tags:** #cheatsheet #programming #comandos #referencia  
 

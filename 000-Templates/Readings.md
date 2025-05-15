@@ -1,6 +1,6 @@
 # <% tp.file.title %>
 
-**Data:** <% tp.date.now("YYYY-MM-DD") %>  
+**Data:** <% tp.date.now("DD-MM-YYYY") %>  
 **Tags:** #leitura #fichamento #resumo #readings  
 **Fonte:** {{autor, ano, título da obra ou link}}
 

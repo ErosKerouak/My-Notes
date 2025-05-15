@@ -1,7 +1,7 @@
 
 # <% tp.file.title %>
 
-**Data:** <% tp.date.now("YYYY-MM-DD") %>  
+**Data:** <% tp.date.now("DD-MM-YYYY") %>  
 **Tags:** #tutorial #instrucoes #procedimento #<% tp.file.folder(true).split("/").pop() %>
 
 ---
