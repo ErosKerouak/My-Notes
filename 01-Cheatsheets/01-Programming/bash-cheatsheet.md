@@ -30,7 +30,8 @@
 - `head -n 10 arquivo.txt` → Mostra as 10 primeiras linhas.
 - `tail -n 10 arquivo.txt` → Mostra as 10 últimas linhas.
 - `tail -f arquivo.log` → Acompanha um arquivo em tempo real.
--
+- `nano arquivo.txt` → Abre um arquivo de texto para edição no nano.
+- `vim arquivo.txt` → Abre um arquivo de texto para edição no vim.
 ---
 
 ### Redirecionamento e Pipes
