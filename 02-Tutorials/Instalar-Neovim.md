@@ -65,30 +65,102 @@ nvim ~/.config/nvim/init.vim
 Cole o conteúdo abaixo:
 
 ```vim
+" Início do gerenciador de plugins
 call plug#begin('~/.vim/plugged')
 
+" Navegação e produtividade
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'mhinz/vim-startify'
+
+" Markdown
 Plug 'plasticboy/vim-markdown'
 Plug 'dkarter/bullets.vim'
+
+" Python
 Plug 'dense-analysis/ale'
 Plug 'vim-python/python-syntax'
-Plug 'morhetz/gruvbox'
+
+" Estética e barra de status
 Plug 'vim-airline/vim-airline'
+
+" Temas visuais
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
+Plug 'navarasu/onedark.nvim'
+Plug 'EdenEast/nightfox.nvim'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'shaunsingh/nord.nvim'
+
+" LaTeX
 Plug 'lervag/vimtex'
 
 call plug#end()
 
-" Configurações gerais
-syntax enable
+" --------- CONFIGURAÇÕES GERAIS ---------
+
+" Aparência
 colorscheme gruvbox
-set number relativenumber scrolloff=5 wrap linebreak mouse=a
-set tabstop=4 shiftwidth=4 expandtab smartindent
+syntax enable
+set number
+set relativenumber
+set scrolloff=5
+set wrap
+set linebreak
+set showmode
+set mouse=a
+set termguicolors
+
+" Statusline
 let g:airline_powerline_fonts = 1
+
+" NerdTree toggle
 nnoremap <C-n> :NERDTreeToggle<CR>
+
+" Melhor indentação
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+
+" Histórico e experiência
+set hidden
+set nobackup
+set nowritebackup
+set noswapfile
+set updatetime=300
+
+" Vim-startify (tela inicial)
+let g:startify_lists = [
+      \ { 'type': 'sessions',  'header': ['   Sessões']       },
+      \ { 'type': 'files',     'header': ['   Arquivos recentes'] },
+      \ { 'type': 'dir',       'header': ['   Arquivos do diretório atual'] },
+      \ ]
+
+" ALE: linter em tempo real
+let g:ale_linters_explicit = 1
+let g:ale_python_flake8_executable = 'flake8'
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 0
+
+" Vimtex: apenas realce de sintaxe, sem compilador
+let g:vimtex_enabled = 1
 let g:vimtex_compiler_enabled = 0
 let g:vimtex_view_enabled = 0
+
+" Markdown e bullets
+let g:vim_markdown_folding_disabled = 1
+let g:bullets_enabled_file_types = ['markdown', 'text', 'gitcommit']
+
+" Plugin python-syntax
+let g:python_highlight_all = 1
+
+" Atalhos úteis para escrita
+inoremap jj <Esc>  " sai do modo de inserção com jj
+
 ```
 
 Salve com `:wq`.
