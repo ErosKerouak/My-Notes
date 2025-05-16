@@ -16,6 +16,7 @@
 - `cd ..` → Volta um diretório.
 - `mkdir nome_pasta` → Cria uma pasta.
 - `rmdir nome_pasta` → Remove uma pasta vazia.
+- `touch arquivo.txt` → cria um arquivo de texto 
 - `rm arquivo.txt` → Remove um arquivo.
 - `rm -r pasta/` → Remove uma pasta e todo o seu conteúdo.
 - `cp arquivo.txt destino/` → Copia um arquivo.
