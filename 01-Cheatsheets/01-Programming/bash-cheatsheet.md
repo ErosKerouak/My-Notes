@@ -16,14 +16,14 @@
 - `cd ..` → Volta um diretório.
 - `mkdir nome_pasta` → Cria uma pasta.
 - `rmdir nome_pasta` → Remove uma pasta vazia.
-- `touch arquivo.txt` → cria um arquivo de texto 
+- `touch arquivo.txt` → Cria um arquivo de texto.
 - `rm arquivo.txt` → Remove um arquivo.
 - `rm -r pasta/` → Remove uma pasta e todo o seu conteúdo.
 - `cp arquivo.txt destino/` → Copia um arquivo.
 - `mv arquivo.txt destino/` → Move ou renomeia um arquivo.
 ---
 
-### Visualização de Arquivos
+### Visualização e Edição de Arquivos
 
 - `cat arquivo.txt` → Mostra o conteúdo do arquivo.
 - `less arquivo.txt` → Permite rolar pelo arquivo (q para sair).
@@ -31,7 +31,7 @@
 - `tail -n 10 arquivo.txt` → Mostra as 10 últimas linhas.
 - `tail -f arquivo.log` → Acompanha um arquivo em tempo real.
 - `nano arquivo.txt` → Abre um arquivo de texto para edição no nano.
-- `vim arquivo.txt` → Abre um arquivo de texto para edição no vim.
+- `vim arquivo.txt` → Abre um arquivo de texto para edição no #vim.
 ---
 
 ### Redirecionamento e Pipes

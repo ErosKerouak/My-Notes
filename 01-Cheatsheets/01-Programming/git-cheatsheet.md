@@ -36,12 +36,14 @@
 ---
 
 ### Trabalhando com Repositórios Remotos
-
+Complete com a explicação 
 - `ssh-keygen -t ed25519 -C "seuemail@example.com"` → Comando para gerar uma nova chave SSH.
 - `git remote add origin SSH_DO_REPOSITORIO` → Define o repositório remoto.
 - `git push origin main` → Envia os *commits* locais para o repositório remoto na *branch main*.
 - `git push -u origin main` → Define a *branch main* como padrão para *git push*.
 - `git pull origin main` → Baixa as atualizações do repositório remoto.
+- `git pull --rebase origin main` → Baixa os commits remotos e reaplica os commits locais por cima deles, mantendo um histórico linear e evitando  merge.
+- `git pull --no-rebase origin main` → Isso fará um merge automático entre as mudanças locais e remotas, **se não houver conflitos**.
 
 ---
 
