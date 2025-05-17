@@ -9,9 +9,12 @@
 ### Manipulação de Arquivos e Diretórios
 
 - `pwd` → Mostra o diretório atual (caminho absoluto).
+- `whoami` → Mostra o nome de usuário. 
+- `hostname` → Mostra o nome da máquina. 
 - `ls` → Lista arquivos e pastas do diretório atual.
 - `ls -l` → Lista arquivos com detalhes (permissões, tamanho, data).
 - `ls -a` → Lista arquivos, incluindo ocultos (. e ..).
+- `find . -name *.txt` → Encontra todos os arquivos com a extensão .txt a partir do diretórioatual. 
 - `cd pasta/` → Acessa um diretório.
 - `cd ..` → Volta um diretório.
 - `mkdir nome_pasta` → Cria uma pasta.
@@ -43,6 +46,14 @@
 
 ---
 
+### Outros 
+
+- `comando  `grap` 
+- `ping`
+
+
+
+--- 
 ### Descompactação de Arquivos
 
 - `unzip arquivo.zip` → Descompacta arquivos `.zip`.
