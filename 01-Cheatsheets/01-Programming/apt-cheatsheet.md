@@ -9,7 +9,6 @@
 ---
 
 ### Instalação e remoção de pacotes
-
 - `sudo apt install nome-do-pacote` → Instala um pacote.  
 - `sudo apt remove nome-do-pacote` → Remove o pacote, mas mantém arquivos de configuração.  
 - `sudo apt purge nome-do-pacote` → Remove o pacote **e** os arquivos de configuração.  

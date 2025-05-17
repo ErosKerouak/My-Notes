@@ -7,7 +7,6 @@
 ---
 
 ### {{Comandos básicos}}
-
 - `comando` → {{Descrição breve}}
 - `comando --opcao` → {{Descrição breve}}
 - `comando argumento` → {{Descrição breve}}

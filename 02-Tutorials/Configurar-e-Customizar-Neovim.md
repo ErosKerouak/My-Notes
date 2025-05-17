@@ -104,7 +104,7 @@ call plug#end()
 " Aparência
 colorscheme gruvbox
 syntax enable
-set number
+set number           
 set relativenumber
 set scrolloff=5
 set wrap

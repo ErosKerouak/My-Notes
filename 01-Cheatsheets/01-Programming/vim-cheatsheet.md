@@ -7,93 +7,311 @@
 
 ---
 
-### Modos do Vim
-
-- `i` → Entra no modo de inserção (inserir texto antes do cursor).  
-- `a` → Insere texto **após** o cursor.  
-- `I` → Insere no início da linha.  
-- `A` → Insere no final da linha.  
-- `Esc` → Sai do modo de inserção e retorna ao modo normal.  
-- `:` → Entra no modo de comandos.
+## **1. Modo Normal** 
 
 ---
 
-### Navegação
+#### **Navegação (essenciais):**
 
-- `h` → Move o cursor para a esquerda.  
-- `l` → Move o cursor para a direita.  
-- `j` → Move o cursor para baixo.  
-- `k` → Move o cursor para cima.  
-- `w` → Pula para o início da próxima palavra.  
-- `b` → Volta para o início da palavra anterior.  
-- `0` → Vai para o início da linha.  
-- `^` → Vai para o primeiro caractere não em branco.  
-- `$` → Vai para o fim da linha.  
-- `gg` → Vai para o início do arquivo.  
-- `G` → Vai para o fim do arquivo.  
-- `:n` → Vai para a linha `n`.
+**Caractere por caractere:**
+- `h` → Move o cursor para a esquerda  
+- `l` → Move o cursor para a direita  
+- `j` → Move o cursor para baixo  
+- `k` → Move o cursor para cima
 
----
+**Em relação as linhas:**
 
-### Inserção e Edição
+- `0` → Vai para o início da linha  
+- `^` → Vai para o primeiro caractere não vazio da linha  
+- `$` → Vai para o final da linha  
 
-- `x` → Apaga o caractere sob o cursor.  
-- `dd` → Apaga a linha atual.  
-- `yy` → Copia (yank) a linha atual.  
-- `p` → Cola após o cursor.  
-- `P` → Cola antes do cursor.  
-- `u` → Desfaz a última ação.  
-- `Ctrl + r` → Refaz (redo).  
-- `r<char>` → Substitui o caractere atual por `<char>`.  
-- `cw` → Substitui (change word).  
-- `ciw` → Substitui palavra inteira.
+**Em relação as palavras:**
 
----
+- `w` → Vai para o início da próxima palavra  
+- `b` → Vai para o início da palavra anterior  
+- `e` → Vai para o final da palavra  
 
-### Busca e Substituição
+**Em relação ao arquivo:**
 
-- `/palavra` → Busca por "palavra" para frente.  
-- `?palavra` → Busca por "palavra" para trás.  
-- `n` → Próxima ocorrência.  
-- `N` → Ocorrência anterior.  
-- `:%s/velho/novo/g` → Substitui "velho" por "novo" no arquivo todo.  
-- `:s/velho/novo/g` → Substitui "velho" por "novo" na linha atual.
+- `gg` → Vai para o início do arquivo  
+- `G` → Vai para o final do arquivo  
+- `nG` → Vai para a linha _n_
+>
+- `Ctrl-d` → Rola meia tela para baixo  
+- `Ctrl-u` → Rola meia tela para cima  
 
 ---
 
-### Salvar e Sair
+#### **Edição (essenciais):**
 
-- `:w` → Salva (write).  
-- `:q` → Sai (quit).  
-- `:wq` ou `ZZ` → Salva e sai.  
-- `:q!` → Sai sem salvar.  
-- `:x` → Salva se houver modificações e sai.
+**Atalhos básicos de edição:**
+
+- `u` → Desfaz a última ação
+- `Ctrl-r` → Refaz a última ação
+- `.` → Repete o último comando de edição
+>
+- `r{char}` → Substitui o caractere sob o cursor por `{char}`
+- `~` → Alterna entre maiúscula/minúscula no caractere
+- `J` → Junta a linha atual com a próxima
+
+**Excluir e/ou recortar:**
+
+- `x` → Apaga o caractere sob o cursor
+- `dd` → Recorta (deleta) a linha atual
+- `dw` → Recorta até o final da palavra
+- `d$` → Recorta do cursor até o final da linha
+
+**Copiar:**
+
+- `yy` → Copia a linha atual
+- `yw` → Copia a palavra
+- `y$` → Copia do cursor até o final da linha
+
+**Colar:**
+
+- `p` → Cola **após** o cursor
+- `P` → Cola **antes** do cursor
 
 ---
 
-### Visual Mode
+#### **Prefixos numéricos (multiplicadores)**
 
-- `v` → Inicia seleção por caractere.  
-- `V` → Inicia seleção por linha.  
-- `Ctrl + v` → Inicia seleção em bloco (coluna).  
-- `y` → Copia o texto selecionado.  
-- `d` → Corta (deleta) o texto selecionado.  
-- `>` / `<` → Indenta ou desindenta bloco.
+- `n{comando}` → Executa o comando `{comando}` **n vezes seguidas**
+    
+
+**Exemplos práticos:**
+
+- `5h` → Move 5 posições para a esquerda
+- `3j` → Move 3 linhas para baixo
+- `10l` → Move 10 posições para a direita
+- `7k` → Move 7 linhas para cima
+- `3w` → Pula 3 palavras à frente
+- `2dd` → Apaga 2 linhas
+- `4p` → Cola 4 vezes
+- `5u` → Desfaz 5 ações
+- `6.` → Repete o último comando 6 vezes
+	
+
+> 💡 Essa lógica funciona com **quase todos os comandos de movimento e edição** no modo normal. É uma das bases da fluidez no uso do Vim.
 
 ---
+
+## **2. Modo de Comando**
+
+---
+
+#### **Gerenciamento de arquivos**
+
+- `:w` → Salva o arquivo atual
+- `:q` → Sai do Vim
+- `:wq` → Salva e sai
+- `:x` → Salva e sai (igual a `:wq`)
+- `:q!` → Sai **sem salvar** as alterações
+- `:w nome.txt` → Salva com um nome diferente
+- `:e nome.txt` → Abre outro arquivo
+- `:r nome.txt` → Insere o conteúdo de outro arquivo no cursor
+
+---
+
+#### **Busca de texto**
+
+- `/palavra` → Busca "palavra" para frente
+- `?palavra` → Busca "palavra" para trás
+- `n` → Vai para a próxima ocorrência
+- `N` → Vai para a ocorrência anterior
+- `:noh` → Remove o destaque da busca atual
+
+---
+
+#### **Substituição de texto (básico)**
+
+- `:s/velho/novo` → Substitui **a primeira ocorrência** na linha atual
+- `:s/velho/novo/g` → Substitui **todas** as ocorrências na linha atual
+- `:%s/velho/novo/g` → Substitui todas as ocorrências no arquivo
+- `:%s/velho/novo/gc` → Substitui todas com **confirmação interativa**
+
+---
+
+#### **Ajuda e documentação**
+
+* `:help` → Abre a ajuda geral do Vim
+* `:help comando` → Abre a ajuda para um comando específico (ex: `:help y`)
+
+---
+
+#### **Execução de comandos externos**
+
+- `:!ls` → Executa o comando `ls` no terminal
+- `:!python3 script.py` → Roda um script diretamente do Vim
+- `:!clear` → Limpa a tela do terminal
+
+---
+
+## **3. Modo Visual **
+
+O modo visual é ativado a partir do **modo normal** com os seguintes comandos:
+
+---
+
+#### **Ativar o modo visual**
+
+- `v` → Entra no **modo visual caractere a caractere**
+    
+- `V` → Entra no **modo visual por linha inteira**
+    
+- `Ctrl + v` → Entra no **modo visual em bloco (coluna)**
+    
+
+---
+
+#### **Ações possíveis no modo visual**
+
+Depois de selecionar o texto com `hjkl` (ou qualquer comando de navegação), você pode:
+
+- `y` → Copiar a seleção
+    
+- `d` → Cortar (apagar) a seleção
+    
+- `x` → Cortar caractere(s) selecionado(s)
+    
+- `p` → Colar substituindo a seleção
+    
+- `~` → Inverter maiúscula/minúscula dos caracteres selecionados
+    
+- `>` → Indentar a seleção à direita
+    
+- `<` → Indentar a seleção à esquerda
+    
+- `=` → Reindentar a seleção automaticamente
+    
+- `:` → Executar um comando `:` sobre a seleção (ex: `:sort`)
+    
+
+>  No modo visual, o `:` abre o modo de comando e aplica o comando somente à seleção.
+
+---
+
+#### **Encerrar o modo visual**
+
+- `Esc` → Sai do modo visual sem aplicar alterações
+    
+
+---
+
+### **Exemplos práticos**
+
+- `vjjy` → Seleciona 3 linhas e copia
+    
+- `V2j>` → Seleciona 3 linhas e indenta
+    
+- `Ctrl+v3jI#` → Com `Ctrl+v`, seleciona 3 linhas e insere `#` no início de cada uma (modo visual em bloco + `I`)
+    
+
+#### Modo de Inserção
+
+> O **modo de inserção** não tem comandos no sentido tradicional — você apenas **digita texto livremente**, como em um editor comum.  
+> Porém, existem **vários comandos no modo normal** que colocam você **dentro do modo de inserção**, e cada um tem um propósito diferente.
+
+Aqui vai uma seção completa, seguindo o seu estilo de cheatsheet:
+
+---
+
+### **Comandos que entram no modo de inserção**
+
+> Todos esses comandos são executados no **modo normal** e fazem o Vim entrar no **modo de inserção** a partir de diferentes posições ou com efeitos distintos.
+
+- `i` → Entra no modo de inserção na **posição atual do cursor**
+    
+- `I` → Entra no modo de inserção **no início da linha (antes do primeiro caractere não vazio)**
+    
+- `a` → Entra no modo de inserção **após o caractere atual**
+    
+- `A` → Entra no modo de inserção **no fim da linha**
+    
+- `o` → Abre uma **nova linha abaixo** e entra no modo de inserção
+    
+- `O` → Abre uma **nova linha acima** e entra no modo de inserção
+    
+- `s` → Substitui o **caractere atual** e entra no modo de inserção
+    
+- `S` → Substitui a **linha inteira** e entra no modo de inserção (igual a `cc`)
+    
+- `cc` → Apaga a linha e entra no modo de inserção
+    
+- `C` → Apaga do cursor até o fim da linha e entra no modo de inserção
+    
+- `R` → Entra no **modo de substituição contínua** (overwrite mode)
+    
+- `gi` → Vai para o **último ponto onde você usou o modo de inserção** e retorna a ele
+    
+
+---
+
+### 💡 Observações
+
+- `i`, `a`, `o` → São os mais básicos e usados no dia a dia
+    
+- `R` → É o único que ativa o **modo de substituição**, diferente do modo de inserção normal
+    
+- `gi` → Útil para voltar rapidamente à última edição
+    
+- `s`, `S`, `cc`, `C` → Combinam substituição + inserção, muito eficientes com prática
+    
+
+---
+
+Se quiser, posso marcar os **3 ou 4 mais importantes para decorar primeiro**, ou passar agora para a seção comparativa dos modos do Vim. Deseja isso?
+
+---
+
+#### **Essenciais para começar**
+
+- `i` → Entra no modo de inserção **na posição atual**
+    
+    > _Mais usado de todos. Ideal para adicionar texto antes do cursor._
+    
+- `a` → Entra no modo de inserção **após o caractere atual**
+    
+    > _Complementar ao `i`. Muito útil para continuar digitando depois da posição atual._
+    
+- `o` → Abre uma **nova linha abaixo** e entra no modo de inserção
+    
+    > _Perfeito para começar uma nova linha de texto rapidamente._
+    
+- `A` → Entra no modo de inserção **no final da linha atual**
+    
+    > _Ótimo para complementar ou editar o final de uma linha._
+    
+
+---
+
+Esses quatro cobrem praticamente **todas as situações comuns de edição** (inserção no meio, no fim, ou em nova linha).
+
+Com o tempo, você pode explorar `I`, `O`, `s`, `S`, `C`, `cc`, etc., mas dominar esses 4 primeiros já te dá **agilidade real** no dia a dia.
+
+Se quiser, posso destacar esses comandos no seu material com um ⚡ ou ✅. Deseja seguir para o resumo comparativo dos modos do Vim?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Dividir a tela com splits
 
+suspender o Vim
 
----
 
-### Dicas úteis
-
-- `.` → Repete o último comando de edição.  
-- `:set number` → Exibe números de linha.  
-- `:set relativenumber` → Números relativos (boa prática para navegação).  
-- `:noh` → Limpa destaque de busca.  
-- `:help comando` → Acessa a ajuda do Vim.
-
----
 
