@@ -82,6 +82,11 @@
 
 ---
 
+### Dividir a tela com splits
+
+
+---
+
 ### Dicas úteis
 
 - `.` → Repete o último comando de edição.  
