@@ -55,7 +55,8 @@ chmod +x ~/.local/bin/obsidian/obsidian.AppImage
 Crie e edite o atalho do aplicativo:
 
 ```bash
-nano ~/.local/share/applications/obsidian.desktop
+touch ~/.local/share/applications/obsidian.desktop
+vim ~/.local/share/applications/obsidian.desktop
 ```
 
 Cole o conteúdo abaixo e edite conforme necessário:

@@ -33,11 +33,28 @@ sudo apt install vim
 
 ---
 
-### 2. Configure a variavel de ambiente `EDITOR` no arquivo `.bashrc`
+### 2. Torne o Vim o editor de texto padrão do terminal
+
+Configure a variável de ambiente `EDITOR` e `VISUAL` no arquivo `~/.bashrc`:
+
+1. Abra o arquivo `~/.bashrc`:
 
 ```bash
-nano ~/.bashrc
+vim ~/.bashrc
 ```
+
+2. Adicione as linhas abaixo no final do arquivo:
+
+```bash
+export EDITOR=vim
+export VISUAL=vim
+```
+
+Depois, recarregue com:
+
+```bash
+source ~/.bashrc
+``` 
 
 ---
 
