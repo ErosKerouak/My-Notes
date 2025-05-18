@@ -42,6 +42,37 @@
 
 ---
 
+#### Gerenciamento de splits:
+
+**Navegar entre splits:**
+
+- `Ctrl + w h` → Move para o **split da esquerda**
+- `Ctrl + w l` → Move para o **split da direita**
+- `Ctrl + w j` → Move para o **split de baixo**
+- `Ctrl + w k` → Move para o **split de cima**
+- `Ctrl + w w` → Alterna para o **próximo split**
+- `Ctrl + w t` → Vai para o **primeiro split**
+- `Ctrl + w b` → Vai para o **último split**
+    
+**Redimensionar splits:**
+
+- `Ctrl + w +` → Aumenta a altura do split
+- `Ctrl + w -` → Diminui a altura do split
+- `Ctrl + w >` → Aumenta a largura
+- `Ctrl + w <` → Diminui a largura
+- `Ctrl + w =` → Equaliza todos os tamanhos
+
+**Fechar splits:**
+
+- `:q` → Fecha o split atual
+- `Ctrl + w c` → Fecha o split atual
+- `Ctrl + w o` → Fecha **todos os outros splits** (só mantém o atual)
+
+> 🧠 Dica para memorizar, tudo começa com `Ctrl + w` → isso ativa os comandos de "window", depois você usa uma letra: `h`, `j`, `k`, `l`, `+`, `-`, `=`, etc.
+
+
+---
+
 #### **Edição (essenciais):**
 
 **Atalhos básicos de edição:**
@@ -147,6 +178,21 @@
 
 ---
 
+#### **Abrir splits**
+
+- `:split` → Divide a tela **horizontalmente** (acima/abaixo) com o mesmo arquivo
+    
+- `:vsplit` → Divide a tela **verticalmente** (lado a lado) com o mesmo arquivo
+    
+- `:split arquivo.txt` → Abre `arquivo.txt` em split horizontal
+    
+- `:vsplit arquivo.txt` → Abre `arquivo.txt` em split vertical
+    
+
+> 💡 Abre no **modo de comando**, então sempre requer `Enter`
+
+---
+
 ## **3. Modo Visual **
 
 O modo visual é ativado a partir do **modo normal** com os seguintes comandos:
@@ -207,16 +253,15 @@ Depois de selecionar o texto com `hjkl` (ou qualquer comando de navegação), vo
 - `Ctrl+v3jI#` → Com `Ctrl+v`, seleciona 3 linhas e insere `#` no início de cada uma (modo visual em bloco + `I`)
     
 
-#### Modo de Inserção
+---
+
+## **4 Modo de Inserção**
 
 > O **modo de inserção** não tem comandos no sentido tradicional — você apenas **digita texto livremente**, como em um editor comum.  
 > Porém, existem **vários comandos no modo normal** que colocam você **dentro do modo de inserção**, e cada um tem um propósito diferente.
-
-Aqui vai uma seção completa, seguindo o seu estilo de cheatsheet:
-
 ---
 
-### **Comandos que entram no modo de inserção**
+#### **Comandos que entram no modo de inserção**
 
 > Todos esses comandos são executados no **modo normal** e fazem o Vim entrar no **modo de inserção** a partir de diferentes posições ou com efeitos distintos.
 
@@ -247,7 +292,7 @@ Aqui vai uma seção completa, seguindo o seu estilo de cheatsheet:
 
 ---
 
-### 💡 Observações
+####  Observações
 
 - `i`, `a`, `o` → São os mais básicos e usados no dia a dia
     
@@ -259,59 +304,3 @@ Aqui vai uma seção completa, seguindo o seu estilo de cheatsheet:
     
 
 ---
-
-Se quiser, posso marcar os **3 ou 4 mais importantes para decorar primeiro**, ou passar agora para a seção comparativa dos modos do Vim. Deseja isso?
-
----
-
-#### **Essenciais para começar**
-
-- `i` → Entra no modo de inserção **na posição atual**
-    
-    > _Mais usado de todos. Ideal para adicionar texto antes do cursor._
-    
-- `a` → Entra no modo de inserção **após o caractere atual**
-    
-    > _Complementar ao `i`. Muito útil para continuar digitando depois da posição atual._
-    
-- `o` → Abre uma **nova linha abaixo** e entra no modo de inserção
-    
-    > _Perfeito para começar uma nova linha de texto rapidamente._
-    
-- `A` → Entra no modo de inserção **no final da linha atual**
-    
-    > _Ótimo para complementar ou editar o final de uma linha._
-    
-
----
-
-Esses quatro cobrem praticamente **todas as situações comuns de edição** (inserção no meio, no fim, ou em nova linha).
-
-Com o tempo, você pode explorar `I`, `O`, `s`, `S`, `C`, `cc`, etc., mas dominar esses 4 primeiros já te dá **agilidade real** no dia a dia.
-
-Se quiser, posso destacar esses comandos no seu material com um ⚡ ou ✅. Deseja seguir para o resumo comparativo dos modos do Vim?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Dividir a tela com splits
-
-suspender o Vim
-
-
-
