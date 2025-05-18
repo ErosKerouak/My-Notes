@@ -70,6 +70,52 @@
 
 > 🧠 Dica para memorizar, tudo começa com `Ctrl + w` → isso ativa os comandos de "window", depois você usa uma letra: `h`, `j`, `k`, `l`, `+`, `-`, `=`, etc.
 
+---
+
+
+####  **Criar e gerenciar abas:**
+
+- `:tabnew` → Abre uma nova aba vazia
+    
+- `:tabnew arquivo.txt` → Abre `arquivo.txt` em nova aba
+    
+- `:tabedit arquivo.txt` → Abre `arquivo.txt` em nova aba (atalho de `:tabnew`)
+    
+- `:tabclose` → Fecha a aba atual
+    
+- `:tabonly` → Fecha todas as abas exceto a atual
+    
+
+
+ **Navegar entre abas:**
+
+- `gt` → Vai para a **próxima aba**
+    
+- `gT` → Vai para a **aba anterior**
+    
+- `n gt` → Vai para a aba de número `n` (ex: `2gt` → vai para a segunda aba)
+    
+- `:tabs` → Lista todas as abas abertas
+    
+
+
+
+ **Visualização de múltiplos arquivos**
+
+Como cada aba pode ter **vários splits dentro dela**, você pode:
+
+1. Abrir um arquivo com `:tabnew arquivo1.txt`
+    
+2. Dentro da aba, dividir a tela com `:vsplit arquivo2.txt`
+    
+3. Criar uma nova aba com `:tabnew arquivo3.txt`
+    
+
+Assim, você terá:
+
+- **Aba 1:** arquivo1.txt + arquivo2.txt em split
+    
+- **Aba 2:** arquivo3.txt sozinho
 
 ---
 
