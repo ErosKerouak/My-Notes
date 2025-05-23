@@ -73,6 +73,29 @@ Categories=Categoria1;Categoria2;
 MimeType=tipo/mime1;tipo/mime2;
 ```
 
+```ini
+[Desktop Entry]
+# Nome que aparecerá no menu
+Name=Neovide
+# Descrição curta (tooltip)
+Comment=Neovim GUI (Neovide)
+# Caminho para o AppImage com parâmetro para abrir arquivos (opcional)
+Exec=/home/eroskerouak/.local/bin/neovide/neovide.AppImage %U
+# Ícone: pode ser caminho absoluto ou nome registrado no tema de ícones
+Icon=/home/eroskerouak/.local/share/icons/neovide.png
+# Não é aplicação de terminal
+Terminal=false
+# Tipo obrigatório
+Type=Application
+# Categorias para o menu
+Categories=Utility;TextEditor;
+# Tipos de arquivo suportados (opcional)
+MimeType=text/plain;inode/directory;
+# Ajuda o GNOME a agrupar janelas
+StartupWMClass=Neovide
+
+```
+
 Explicação de cada campo:
 
 | Campo        | O que faz                                                                     |
