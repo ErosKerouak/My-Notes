@@ -146,7 +146,8 @@ Assim, você terá:
 
 **Colar:**
 
-- `p` → Cola **após** o cursor
+- `p` → 
+
 - `P` → Cola **antes** do cursor
 
 ---

@@ -490,3 +490,14 @@ Cada entrada seguirá o seguinte modelo:
 [https://glts.github.io/2013/04/28/vim-normal-mode-grammar.html](https://glts.github.io/2013/04/28/vim-normal-mode-grammar.html)
 
 [https://www.freecodecamp.org/news/vim-language-and-motions-explained/](https://www.freecodecamp.org/news/vim-language-and-motions-explained/)
+
+--- 
+
+[https://youtu.be/wlR5gYd6um0?si=W-gabN4ffOR-MfQp](https://youtu.be/wlR5gYd6um0?si=W-gabN4ffOR-MfQp)
+
+
+**Síntese do texto "Mastering Vim grammar"**
+
+O artigo apresenta uma abordagem didática para aprender a usar o editor de texto Vim de forma mais intuitiva, comparando seu funcionamento ao aprendizado de um novo idioma — chamado pelo autor de _Vimish_. A estrutura fundamental da "gramática do Vim" é simples: **verbo + substantivo**, onde os _verbos_ são operadores (como `d` para deletar, `y` para copiar, `c` para alterar) e os _substantivos_ são movimentos (`w`, `e`, `}` etc.), objetos de texto (`iw`, `i{`, `a"` etc.), buscas (`f`, `t`, `/` etc.) e marcas (`'a`, `` `a ``).
+
+O autor destaca que, com o domínio de poucos verbos e substantivos, é possível construir comandos poderosos e eficientes. Exemplos incluem comandos como `d2w` (deletar duas palavras) ou `di(` (deletar conteúdo dentro de parênteses). A ideia central é que, assim como em qualquer idioma, a fluência em Vim exige vocabulário, regras gramaticais e prática constante, até que o uso se torne automático. O artigo conclui incentivando o leitor a experimentar e praticar, enfatizando que a produtividade é o objetivo principal.
