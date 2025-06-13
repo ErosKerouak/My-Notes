@@ -47,6 +47,34 @@ Complete com a explicação
 
 ---
 
+### Lidando com Conflitos no `git pull`
+O erro ocorre quando você tem modificações locais em arquivos que também foram alterados no repositório remoto. O Git evita sobrescrever essas mudanças automaticamente. Há três estratégias principais:
+
+- `git add . && git commit -m "mensagem"` → **Commita as mudanças locais**, então use `git pull` normalmente para mesclar com o remoto.
+- `git stash && git pull && git stash pop` → **Salva temporariamente** suas alterações com `stash`, faz o `pull`, e depois reaplica as mudanças.
+- `git reset --hard HEAD && git pull` → **Descarta completamente** as alterações locais (sem chance de recuperação) e atualiza com o remoto.
+
+**Atenção:** Sempre revise com `git status` antes de decidir. Use `git diff` para inspecionar suas mudanças antes de apagá-las.
+
+---
+
+### Usando `git stash`
+O comando `git stash` é útil para guardar temporariamente alterações locais não comitadas, permitindo que você troque de branch ou atualize o repositório sem perder seu progresso atual.
+
+- `git stash` → Salva as alterações locais (inclusive modificações em arquivos rastreados) e limpa o diretório de trabalho.
+- `git stash list` → Lista os stashes salvos.
+- `git stash pop` → Recupera e remove o stash mais recente, reaplicando as alterações.
+- `git stash apply` → Recupera o stash mais recente **sem removê-lo** da lista.
+- `git stash drop` → Remove o stash mais recente da lista.
+- `git stash clear` → Remove **todos** os stashes.
+
+Use `git stash` com cuidado: ele **não salva arquivos não rastreados** por padrão. Para salvar tudo:
+
+- `git stash -u` → Inclui arquivos não rastreados (`untracked files`).
+- `git stash -a` → Inclui arquivos ignorados (`.gitignore`), além dos não rastreados.
+
+---
+
 ###  Relacionado a
 
 - [[bash-cheatsheet]]
